@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Monisha Sivakumar — Data Science Enthusiast, Python Developer, and Machine Learning Aspirant." />
+  <meta name="theme-color" content="#0b1120" />
+  <title>Monisha Sivakumar | Data Science Portfolio</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ============================= NAVBAR ============================= -->
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <span class="brand-mark">MS</span>
+        <span class="brand-text">Monisha</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+        aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <!-- Dark / Light mode toggle -->
+            <button id="themeToggle" class="btn btn-theme-toggle" type="button" aria-label="Toggle color theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================= HERO ============================= -->
+  <header id="home" class="hero-section d-flex align-items-center">
+    <!-- Animated particle canvas background -->
+    <canvas id="particles" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-overlay"></div>
+
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-9 mx-auto text-center reveal">
+          <p class="hero-greeting mb-2">Hello, I'm</p>
+          <h1 class="hero-name mb-3">Monisha Sivakumar</h1>
+          <h2 class="hero-role mb-4">
+            <span id="typedRole" class="typed-text"></span><span class="type-cursor">|</span>
+          </h2>
+          <p class="hero-desc mx-auto mb-4">
+            I love solving real-world problems with data, AI, and intelligent systems —
+            transforming raw information into insights, automation, and smarter decisions.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 justify-content-center mb-4">
+            <a href="#projects" class="btn btn-primary-glow btn-lg">
+              <i class="bi bi-folder2-open me-2"></i>View Projects
+            </a>
+            <a href="./assets/resume.pdf" download="resume.pdf" class="btn btn-outline-glow btn-lg">
+              <i class="bi bi-download me-2"></i>
+              Download Resume
+            </a>
+          </div>
+
+          <!-- Social icons -->
+          <div class="hero-socials d-flex gap-3 justify-content-center">
+            <a href="https://www.linkedin.com/in/monisha-sivakumar999" target="_blank" rel="noopener" class="social-btn"
+              aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/monishasiva" target="_blank" rel="noopener" class="social-btn"
+              aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:monisivakumar2004@gmail.com" class="social-btn" aria-label="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <i class="bi bi-chevron-double-down"></i>
+    </a>
+  </header>
+
+  <!-- ============================= ABOUT ============================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-eyebrow">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7 reveal">
+          <p class="lead-muted">
+            I'm a <strong>Data Science enthusiast</strong> with a deep passion for
+            <strong>Machine Learning</strong>, <strong>Artificial Intelligence</strong>, and
+            <strong>Python development</strong>. I enjoy exploring data, uncovering patterns, and building
+            intelligent systems that create real impact.
+          </p>
+          <p class="lead-muted">
+            My focus lies in <strong>data analytics</strong>, <strong>problem solving</strong>, and
+            <strong>continuous learning</strong> — always pushing to understand new algorithms, tools, and
+            techniques that turn complex data into meaningful solutions.
+          </p>
+
+          <h6 class="mt-4 mb-3 text-accent fw-semibold">Areas of Interest</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="interest-chip"><i class="bi bi-bar-chart-line me-1"></i>Data Analytics</span>
+            <span class="interest-chip"><i class="bi bi-cpu me-1"></i>AI Applications</span>
+            <span class="interest-chip"><i class="bi bi-robot me-1"></i>Data Engineering</span>
+            <span class="interest-chip"><i class="bi bi-camera-reels me-1"></i>Computer Vision</span>
+            <span class="interest-chip"><i class="bi bi-chat-square-text me-1"></i>NLP</span>
+            <span class="interest-chip"><i class="bi bi-graph-up-arrow me-1"></i>Business Intelligence</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5 reveal">
+          <div class="about-image-wrap mx-auto">
+            <img src="assets/profile.png" alt="Portrait of Monisha Sivakumar" class="about-image" />
+            <div class="about-image-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= SKILLS ============================= -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-eyebrow">What I work with</span>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Programming -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 skill-card">
+            <div class="skill-head"><i class="bi bi-code-slash"></i>
+              <h5>Programming</h5>
+            </div>
+            <div class="skill-bar" data-skill="90"><span>Python</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="80"><span>SQL</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="70"><span>JavaScript</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="85"><span>HTML</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="80"><span>CSS</span>
+              <div class="bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 skill-card">
+            <div class="skill-head"><i class="bi bi-graph-up"></i>
+              <h5>Data Science</h5>
+            </div>
+            <div class="skill-bar" data-skill="88"><span>Pandas</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="85"><span>NumPy</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="80"><span>Matplotlib</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="82"><span>Scikit-Learn</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="75"><span>TensorFlow</span>
+              <div class="bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 skill-card">
+            <div class="skill-head"><i class="bi bi-database"></i>
+              <h5>Database</h5>
+            </div>
+            <div class="skill-bar" data-skill="80"><span>MySQL</span>
+              <div class="bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 skill-card">
+            <div class="skill-head"><i class="bi bi-globe2"></i>
+              <h5>Web</h5>
+            </div>
+            <div class="skill-bar" data-skill="78"><span>Flask</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="85"><span>Bootstrap</span>
+              <div class="bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visualization -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 skill-card">
+            <div class="skill-head"><i class="bi bi-pie-chart"></i>
+              <h5>Visualization</h5>
+            </div>
+            <div class="skill-bar" data-skill="80"><span>Power BI</span>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill-bar" data-skill="85"><span>Excel</span>
+              <div class="bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 skill-card">
+            <div class="skill-head"><i class="bi bi-tools"></i>
+              <h5>Tools</h5>
+            </div>
+            <div class="tool-badges">
+              <span class="tool-badge"><i class="bi bi-git"></i> Git</span>
+              <span class="tool-badge"><i class="bi bi-github"></i> GitHub</span>
+              <span class="tool-badge"><i class="bi bi-code-square"></i> VS Code</span>
+              <span class="tool-badge"><i class="bi bi-journal-code"></i> Jupyter</span>
+              <span class="tool-badge"><i class="bi bi-cloud"></i> Google Colab</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="col-12 reveal">
+          <div class="glass-card skill-card">
+            <div class="skill-head"><i class="bi bi-people"></i>
+              <h5>Soft Skills</h5>
+            </div>
+            <div class="tool-badges">
+              <span class="tool-badge"><i class="bi bi-hand-thumbs-up"></i> Teamwork</span>
+              <span class="tool-badge"><i class="bi bi-chat-dots"></i> Communication</span>
+              <span class="tool-badge"><i class="bi bi-lightbulb"></i> Problem Solving</span>
+              <span class="tool-badge"><i class="bi bi-diagram-3"></i> Critical Thinking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PROJECTS ============================= -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-eyebrow">Selected work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-5 reveal">
+          <article class="glass-card project-card h-100">
+            <div class="project-img-wrap">
+              <img src="assets/project1.png" alt="SmartDoc AI document processing" class="project-img" />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">SmartDoc AI</h5>
+              <p class="project-sub">Intelligent Document Processing System</p>
+              <p class="project-desc">
+                An AI-powered platform that extracts structured information from invoices, receipts, and
+                bills using OCR, image preprocessing, and Large Language Models.
+              </p>
+              <div class="tech-badges mb-3">
+                <span class="badge tech">Python</span><span class="badge tech">Flask</span>
+                <span class="badge tech">EasyOCR</span><span class="badge tech">OpenCV</span>
+                <span class="badge tech">Gemini API</span><span class="badge tech">MySQL</span>
+                <span class="badge tech">Bootstrap</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-sm btn-primary-glow"><i class="bi bi-box-arrow-up-right me-1"></i>Live
+                  Demo</a>
+                <a href="https://github.com/monishasiva" target="_blank" rel="noopener"
+                  class="btn btn-sm btn-outline-glow"><i class="bi bi-github me-1"></i>GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-5 reveal">
+          <article class="glass-card project-card h-100">
+            <div class="project-img-wrap">
+              <img src="assets/project2.png" alt="Emotion-aware voice feedback system" class="project-img" />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">Emotion-Aware Voice Feedback</h5>
+              <p class="project-sub">Speech Emotion Recognition</p>
+              <p class="project-desc">
+                A machine learning application that analyzes voice recordings to detect emotions and provide
+                real-time confidence and stress feedback using deep learning.
+              </p>
+              <div class="tech-badges mb-3">
+                <span class="badge tech">Python</span><span class="badge tech">TensorFlow</span>
+                <span class="badge tech">Librosa</span><span class="badge tech">Streamlit</span>
+                <span class="badge tech">Matplotlib</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-sm btn-primary-glow"><i class="bi bi-box-arrow-up-right me-1"></i>Live
+                  Demo</a>
+                <a href="https://github.com/monishasiva" target="_blank" rel="noopener"
+                  class="btn btn-sm btn-outline-glow"><i class="bi bi-github me-1"></i>GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= EXPERIENCE ============================= -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-eyebrow">Where I've worked</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="glass-card timeline-content">
+            <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+              <h5 class="mb-0">Data Analyst Intern</h5>
+              <span class="badge duration">Apr 2025 – May 2025</span>
+            </div>
+            <p class="text-accent mb-3">Cognifyz Technologies · Remote</p>
+            <ul class="timeline-list">
+              <li>Built interactive Power BI dashboards to visualize key business metrics, enabling faster, data-driven
+                decision-making across teams.</li>
+              <li>Implemented DAX measures and optimized Power Query transformations to streamline reporting workflows
+                and improve accuracy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="bi bi-cpu-fill"></i></div>
+          <div class="glass-card timeline-content">
+            <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+              <h5 class="mb-0">Machine Learning Intern</h5>
+              <span class="badge duration">Dec 2024 – Jan 2025</span>
+            </div>
+            <p class="text-accent mb-3">CodSoft Technologies · Remote</p>
+            <ul class="timeline-list">
+              <li>Built and evaluated machine learning models on real-world Kaggle datasets, applying data cleaning and
+                preprocessing techniques to improve reliability.</li>
+              <li>Analyzed structured datasets using Python to extract actionable insights and validate model
+                performance through systematic evaluation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= EDUCATION ============================= -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-eyebrow">My background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="glass-card edu-card h-100">
+            <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <h5>Master of Data Science</h5>
+            <p class="text-accent mb-1">Bishop Heber College</p>
+            <p class="edu-meta mb-2">Jul 2024 – Apr 2026</p>
+            <span class="badge cgpa">CGPA: 8.4 / 10</span>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="glass-card edu-card h-100">
+            <div class="edu-icon"><i class="bi bi-book-half"></i></div>
+            <h5>Bachelor of Mathematics</h5>
+            <p class="text-accent mb-1">Seethalakshmi Ramaswami College</p>
+            <p class="edu-meta mb-2">Jul 2021 – Apr 2024</p>
+            <span class="badge cgpa">CGPA: 8.3 / 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CERTIFICATIONS ============================= -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-eyebrow">Verified learning</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="glass-card cert-card h-100"><i class="bi bi-database-check"></i>
+            <p>SQL for Data Analysis</p><small class="cert-meta">LinkedIn Learning &middot; Verified</small>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="glass-card cert-card h-100"><i class="bi bi-award-fill"></i>
+            <p>NCC &lsquo;C&rsquo; Certificate</p><small class="cert-meta">Grades B &amp; C &middot; Best Outgoing Cadet
+              &middot; EBSB Camp</small>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="glass-card cert-card h-100"><i class="bi bi-keyboard-fill"></i>
+            <p>Type Writing</p><small class="cert-meta">Junior Grade</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= ACHIEVEMENTS ============================= -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-eyebrow">Milestones</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="glass-card achieve-card h-100">
+            <i class="bi bi-award-fill"></i>
+            <h6>Best Outgoing Cadet</h6>
+            <p>Recognized as Best Outgoing Cadet of the College NCC unit.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="glass-card achieve-card h-100">
+            <i class="bi bi-patch-check-fill"></i>
+            <h6>NCC &lsquo;C&rsquo; Certificate</h6>
+            <p>Earned the highest NCC honour with Grades B &amp; C.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="glass-card achieve-card h-100">
+            <i class="bi bi-flag-fill"></i>
+            <h6>EBSB Camp Completion</h6>
+            <p>Completed the Ek Bharat Shreshtha Bharat national camp.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="glass-card achieve-card h-100">
+            <i class="bi bi-briefcase-fill"></i>
+            <h6>Applied AI Internships</h6>
+            <p>Completed Data Analyst and Machine Learning internships.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT ============================= -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-eyebrow">Say hello</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact info -->
+        <div class="col-lg-5 reveal">
+          <div class="glass-card contact-info h-100">
+            <h5 class="mb-4">Contact Information</h5>
+            <div class="contact-line"><span class="ci-icon"><i class="bi bi-person-fill"></i></span>
+              <div><small>Name</small>
+                <p>Monisha Sivakumar</p>
+              </div>
+            </div>
+            <div class="contact-line"><span class="ci-icon"><i class="bi bi-envelope-fill"></i></span>
+              <div><small>Email</small>
+                <p>monisivakumar2004@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-line"><span class="ci-icon"><i class="bi bi-telephone-fill"></i></span>
+              <div><small>Phone</small>
+                <p>+91 99942 51165</p>
+              </div>
+            </div>
+            <div class="contact-line"><span class="ci-icon"><i class="bi bi-geo-alt-fill"></i></span>
+              <div><small>Location</small>
+                <p>Trichy, Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <div class="map-embed mt-4">
+              <iframe title="Location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=78.60%2C10.75%2C78.78%2C10.85&layer=mapnik">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="col-lg-7 reveal">
+          <div class="glass-card p-4 p-md-5 h-100">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="cfName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="cfName" required />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cfEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="cfEmail" required />
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-12">
+                  <label for="cfSubject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="cfSubject" required />
+                  <div class="invalid-feedback">Please enter a subject.</div>
+                </div>
+                <div class="col-12">
+                  <label for="cfMessage" class="form-label">Message</label>
+                  <textarea class="form-control" id="cfMessage" rows="5" required></textarea>
+                  <div class="invalid-feedback">Please enter a message.</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-glow btn-lg w-100">
+                    <i class="bi bi-send-fill me-2"></i>Send Message
+                  </button>
+                </div>
+              </div>
+              <div id="formSuccess" class="alert alert-success mt-3 d-none" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>Thanks! Your message has been sent.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= COLLABORATE CTA ============================= -->
+  <section id="collaborate" class="cta-section">
+    <div class="container text-center reveal">
+      <h2 class="cta-title mb-3">Let's build intelligent solutions together.</h2>
+      <p class="cta-sub mb-4">I'm open to:</p>
+      <div class="d-flex flex-wrap gap-3 justify-content-center mb-5">
+        <span class="cta-chip"><i class="bi bi-check2-circle me-1"></i>Data Science Projects</span>
+        <span class="cta-chip"><i class="bi bi-check2-circle me-1"></i>Machine Learning</span>
+        <span class="cta-chip"><i class="bi bi-check2-circle me-1"></i>AI Development</span>
+        <span class="cta-chip"><i class="bi bi-check2-circle me-1"></i>Python Development</span>
+        <span class="cta-chip"><i class="bi bi-check2-circle me-1"></i>Freelance Opportunities</span>
+        <span class="cta-chip"><i class="bi bi-check2-circle me-1"></i>Full-Time Roles</span>
+      </div>
+      <a href="#contact" class="btn btn-primary-glow btn-xl">
+        <i class="bi bi-chat-heart-fill me-2"></i>Let's Connect
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-md-5">
+          <a class="footer-brand" href="#home"><span class="brand-mark">MS</span> Monisha Sivakumar</a>
+          <p class="footer-text mt-3">
+            Data Science Enthusiast · Python Developer · Machine Learning Aspirant. Turning data into
+            intelligent, real-world solutions.
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="footer-head">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h6 class="footer-head">Connect</h6>
+          <div class="d-flex gap-3">
+            <a href="https://www.linkedin.com/in/monisha-sivakumar999" target="_blank" rel="noopener" class="social-btn"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/monishasiva" target="_blank" rel="noopener" class="social-btn"
+              aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:monisivakumar2004@gmail.com" class="social-btn" aria-label="Email"><i
+                class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="text-center footer-copy mb-0">
+        &copy; <span id="year"></span> Monisha Sivakumar. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
